@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    align-items: center;
+    color: black;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: rgb(90, 143, 186);
+    padding: 1em;
+    display: flex;
+    height: 100vh;
+}
+
+a{
+    color: #2762eb;
+    text-decoration: none;
+}
+
+label{
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input:not([type="checkbox"]) {
+    background-color: transparent;
+    border: 2px solid #9bb3e8;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+     
+}
+
+.checkbox-container{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.checkbox-container label{
+    color: black;
+    font-weight: normal;
+}
+
+.checkbox-container a{
+    margin-left: auto;
+}
+
+.container{
+    background-color: rgb(158, 185, 226);
+    display: flex;
+    margin: auto;
+    width: 1000px;
+    max-width: 100%;
+    border-radius: 4px;
+    border: 20px solid rgb(158, 185, 226);
+    
+}
+.features{
+    border-radius: 1px solid #ecf2ff;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    flex: 1.5;
+}
+
+.feature{
+    padding-left: 30px;
+    position: relative;
+    margin: 40px 0;
+}
+
+.feature h1{
+    margin: 0;
+}
+
+.feature p{
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 5px 0;
+}
+
+form{
+flex: 1;
+padding: 40px;
+}
+
+.btn{
+    cursor: pointer;
+    background-color: rgb(107, 107, 231);
+    border: #2762eb;
+    border-radius: 3px;
+    color: #ecf2ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.btn-ghost{  
+    border-color: black;
+    color: black;
+}
+
+.form-control{
+    margin: 0;
+    width: 100%;
+}
+
+.log__img{
+    width: 120px;
+    border-radius: 50%;
+    border: 2px solid steelblue;
+}
+
+@media(max-width: 768px) {
+    .container{
+        flex-direction: column;
+    }
+
+    form{
+        border-right: 0;
+    }
+}
